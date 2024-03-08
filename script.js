@@ -6,11 +6,12 @@ function countDown() {
   const horas = Math.floor(quantoTempo / (60 * 60 * 1000)) % 24;
   const minutos = Math.floor(quantoTempo / (60 * 1000)) % 60;
   const segundos = Math.floor(quantoTempo / 1000) % 60;
+
+  if (dias <= 0) {
+    const diasDom = (document.querySelector('.dias').innerHTML =
+      'Chegou o grande dia!');
+  }
   const diasDom = (document.querySelector('.dias').innerHTML = dias);
-  const horasDom = (document.querySelector('.horas').innerHTML = horas);
-  const minutosDom = (document.querySelector('.minutos').innerHTML = minutos);
-  const segundosDom = (document.querySelector('.segundos').innerHTML =
-    segundos);
 }
 
 setInterval(() => {
@@ -133,27 +134,3 @@ window.onclick = function (event) {
     document.body.style.overflow = 'auto';
   }
 };
-
-const input = document.querySelector('.input_musica');
-const sugerir = document.querySelector('.musica_convidados');
-const input_link = document.querySelector('.sugerir_link');
-const erro = document.querySelector('.erro');
-function sugerirMusica(event) {
-  if (input.value.length > 0 || sugerir.value.length > 0) {
-    const link = `https://api.whatsapp.com/send/?phone=5551989582143&text=Olá,+gostaria+de+sugerir+a+música+para+a+festa :+${
-      input.value
-    }+${' - ' + input_link.value}&type=phone_number&app_absent=0'`;
-    window.location.assign(link);
-  } else {
-    erro.classList.add('ativo');
-  }
-}
-
-input.addEventListener('keyup', () => {
-  erro.classList.remove('ativo');
-});
-input_link.addEventListener('keyup', () => {
-  erro.classList.remove('ativo');
-});
-
-sugerir.addEventListener('click', sugerirMusica);
