@@ -62,6 +62,7 @@ background-color: #FAFAFA;
     
 }
 
+
 .flor{
     width: 300px;
     margin: 0 auto  ;
@@ -118,8 +119,7 @@ background-color: #FAFAFA;
      }
   }
 .data {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px;
     text-align: center;
     align-self: center;
     color: #5A7A6B;  
@@ -129,62 +129,40 @@ background-color: #FAFAFA;
     
 }
 
-
-.detalhe-e{
-    background-color: #B6D0AB;
-    color: #5A7A6B;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-
-
-    
-
-}
-
-
-.data::after, .data::before{
-content: "";
-width:195px;
-height: 1px;
-top: 15px;
-background-color: #5A7A6B;
-position: absolute;
-}
-
-.data::after{
-  right:  150px;
-}
-.data::before{
-    left:  150px;
-  }
-
-  
-
-
   .container_nomes{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-self: center;
     flex-wrap: wrap;
-    position: relative
+    position: relative;
+ 
 
   }
+
+  .juntamente{
+    display: flex;
+    color: #A1AB93;
+    gap: 25px;
+    padding: 5px;
+    text-align: center;
+    justify-content: space-around;
+ 
+}
+
+.bencao{
+    color:#A1AB93 ;
+    text-align: center;
+ 
+}
 
 
   .paisnoiva{
-    color: #A1AB93;
-    padding-bottom: 20px;
-    text-align: center;
+    padding-top: 20px;
+    
+   
   }
-  .paisnoiva p:first-child{
-    font: 400 1.8rem "Roboto Slab", sans-serif;
 
-  }
 
 
 
@@ -379,7 +357,8 @@ position: relative;
 .contador p{
     margin-top: 10px;
     color: #606060;
-    padding-bottom: 20px;
+
+ 
     
    
 }
@@ -387,7 +366,7 @@ position: relative;
 .container_tempo{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     gap: 20px;
     text-align: center;
     
@@ -402,6 +381,7 @@ position: relative;
     display: flex;
     flex-direction: column;
     font-weight: 700;
+
 }
 
 @media(max-width:555px) {
@@ -425,7 +405,7 @@ position: relative;
 
 
     .tempo span{
-        font-size: 1.2rem !important;
+        font-size: 1.8rem !important;
        
     }
   }

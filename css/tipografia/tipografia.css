@@ -8,7 +8,7 @@
 
 
 .font-1-300 {
-    font: 300 1.5rem "Roboto Slab", sans-serif;
+    font: 300 1.4rem "Roboto Slab", sans-serif;
   
 }
 
@@ -20,11 +20,11 @@
 }
 
 .font-1-400-s {
-    font: 400 0.9rem "Roboto Slab", sans-serif;
+    font: 400 0.7rem "Roboto Slab", sans-serif;
 }
 
 .font-1-400-m {
-    font: 400 1.1rem "Roboto Slab", sans-serif;
+    font: 400 1rem "Roboto Slab", sans-serif;
 }
 
 .font-2 {
@@ -36,6 +36,8 @@
     font: 4.5rem "HighSpirited", sans-serif !important;
     
 }
+
+
 
 @font-face {
     font-family: HighSpirited;
